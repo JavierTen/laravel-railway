@@ -15,7 +15,8 @@
     <!-- Scripts -->
 
 
-
+    <link rel="stylesheet" href="{{ asset('build/assets/app-BwHaPEbd.css') }}">
+    <script src="{{ asset('build/assets/app-CAkSn3BF.js') }}" defer></script>
 
 </head>
 
