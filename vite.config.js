@@ -8,4 +8,9 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    server: {
+        hmr: {
+            host: 'laravel-railway-production-6312.up.railway.app',
+        },
+    },
 });
