@@ -22,4 +22,8 @@ Route::get('/check-manifest', function () {
     return file_exists($path) ? 'Manifest found' : 'Manifest NOT found';
 });
 
+Route::get('/check-build', function () {
+    return response()->json(scandir(public_path('build')));
+});
+
 require __DIR__ . '/auth.php';
