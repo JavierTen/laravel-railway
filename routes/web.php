@@ -17,4 +17,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::get('/check-manifest', function () {
+    $path = public_path('build/manifest.json');
+    return file_exists($path) ? 'Manifest found' : 'Manifest NOT found';
+});
+
+require __DIR__ . '/auth.php';
